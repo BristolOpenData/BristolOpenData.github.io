@@ -1,4 +1,4 @@
-# Tree data standardisation
+
 The [BristolTrees](http://bristoltrees.space) site currently maps around 66,000 trees in Bristol and surrounds obtained from multiple sources.  Each source has provided data in its own format on the trees in their care so it has been necessary to convert this heterogeneous data to a unified data set.  The following notes on this project are a contribution to the discussion of standardisation.
 
 Trees are complex dynamic objects and the records kept reflect the different purposes for which data is collected and stored.  Data from an Arboretum will be different to that from the part of the council responsible for planting and general maintenance and different again from the data needed for Tree Protection orders (TPO)  Not only does purpose affect what data is held, it determines the precision of the data and it determines accuracy since the cost of errors will vary by purpose.
@@ -6,13 +6,13 @@ Trees are complex dynamic objects and the records kept reflect the different pur
 ## Core data
 The core data used in Bristol Trees are:
 
-*Identifier:  constructed {sourcecode}-{sourceid}
-*Species - Primary: Botanical (latin) name; derived Common name
-*Location - Primary: Lat/long; derived: OS Easting/Northing; Secondary: Site, Address
-*Dimensions: survey date;  girth (trunk circumference) in cm; height in m ; canopy width in m
-*Age : age at survey date | date planted | maturity
-*State:  Live Tree | Stump | Dead | Tree pit | No tree | Sculpture ; tree condition
-*Description: information about this specific tree; history etc
+* Identifier:  constructed {sourcecode}-{sourceid}
+* Species - Primary: Botanical (latin) name; derived Common name
+* Location - Primary: Lat/long; derived: OS Easting/Northing; Secondary: Site, Address
+* Dimensions: survey date;  girth (trunk circumference) in cm; height in m ; canopy width in m
+* Age : age at survey date | date planted | maturity
+* State:  State category; tree condition
+* Description: information about this specific tree; history etc
 
 ### Tree identity
 To provide a unique internal identifier which retains the identity in the source, Bristol Trees constructs a binomial code, using a code for the source and the source code.  It is important for the source identifier be recoverable so that matching to source data and export of updated data is possible.  This depends on the existence of a unique code or combination of codes in the source data and this is not always the case. Since identifiers are used in URLs, some reformatting may be needed, for example to replace / by underscore. (or uri-encoding)
