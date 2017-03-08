@@ -2,7 +2,7 @@
 title: My Best Test Post Ever
 category: Events
 feature_text: A fabulous new post of different styles and stuff
-feature_image: "BristolOpenData.github.io/assets/images/BristolBlue.png"
+feature_image: "https://bristolopendata.github.io/assets/images/BristolBlue.png"
 ---
 
 This is some test text, lots of test text here it is
