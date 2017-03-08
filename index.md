@@ -18,7 +18,7 @@ Intro text
 
 ![Node logo](/assets/images/BristolODInodeLarge.png)
 
-![Here be Data](/assets/images/data.png)
+![Here be Data](/assets/images/data.PNG)
 
 
 
