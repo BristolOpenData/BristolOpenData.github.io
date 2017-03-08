@@ -6,8 +6,8 @@ Here's another
 and another
 and another
 
-*this
-*is
-*my
-*list
+* this
+* is
+* my
+* list
 
