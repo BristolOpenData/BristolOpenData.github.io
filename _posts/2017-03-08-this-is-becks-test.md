@@ -29,3 +29,6 @@ and another
 **BOLD**
 
 ~~strikethrough~~
+
+
+![alt text](https://bristolopendata.github.io/assets/images/BristolBlue.png "my test image")
