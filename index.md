@@ -16,5 +16,6 @@ Intro text
 - Item 2
 - Item 3
 
-![Node logo](/assets/images/BristolODINodeLarge.png)
+![Node logo](/assets/images/BristolODInodeLarge.png)
+
 
