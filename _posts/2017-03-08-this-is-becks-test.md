@@ -31,4 +31,5 @@ and another
 ~~strikethrough~~
 
 
-![alt text](https://bristolopendata.github.io/assets/images/BristolBlue.png "my test image" | width=100)
+![](https://bristolopendata.github.io/assets/images/BristolBlue.png | width=100)
+![alt text](https://bristolopendata.github.io/assets/images/BristolBlue.png "my test image")
