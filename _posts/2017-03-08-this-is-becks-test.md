@@ -1,4 +1,6 @@
-### This is my test post
+# This is my test post
+## another heading
+## heading number 3
 
 This is my first line
 
