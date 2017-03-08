@@ -10,7 +10,7 @@ The core data used in Bristol Trees are:
 * Species - Primary: Botanical (latin) name; derived Common name
 * Location - Primary: Lat/long; derived: OS Easting/Northing; Secondary: Site, Address
 * Dimensions: survey date;  girth (trunk circumference) in cm; height in m ; canopy width in m
-* Age : age at survey date | date planted | maturity
+* Age : age at survey date ; date planted ; maturity
 * State:  State category; tree condition
 * Description: information about this specific tree; history etc
 
