@@ -15,12 +15,10 @@ The core data used in Bristol Trees are:
 * State:  State category; tree condition
 * Description: information about this specific tree; history etc
 
-```
-
+```xml
 <trees>
   <id>Bcc-23456</id>
 </trees>
-
 ```
 
 ### Tree identity
