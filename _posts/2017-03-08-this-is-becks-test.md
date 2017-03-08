@@ -15,3 +15,8 @@ and another
 * my
 * list
 
+*emphasis*
+
+**BOLD**
+
+~~strikethrough~~
