@@ -1,3 +1,11 @@
+---
+title: Welcome
+category: General
+feature_text: |
+  Here is a short sentance
+---
+
+
 ## Welcome to Bristol Open Data!
 
 We’re really excited to have our site up and running. Whilst this is a new site, launching the identity and activities of a new group, it is the result of a lot of hard work behind the scenes and a lot of conversations about what the purpose and role of the group should be.
