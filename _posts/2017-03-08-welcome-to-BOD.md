@@ -2,7 +2,7 @@
 title: Welcome
 category: General
 feature_text: |
-  Here is a short sentance
+  Welcome to Bristol Open Data!
 ---
 
 
