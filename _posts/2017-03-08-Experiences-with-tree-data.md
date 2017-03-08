@@ -14,11 +14,15 @@ The core data used in Bristol Trees are:
 * Age : age at survey date ; date planted ; maturity
 * State:  State category; tree condition
 * Description: information about this specific tree; history etc
+
 ```
+
 <trees>
   <id>Bcc-23456</id>
 </trees>
+
 ```
+
 ### Tree identity
 To provide a unique internal identifier which retains the identity in the source, Bristol Trees constructs a binomial code, using a code for the source and the source code.  It is important for the source identifier be recoverable so that matching to source data and export of updated data is possible.  This depends on the existence of a unique code or combination of codes in the source data and this is not always the case. Since identifiers are used in URLs, some reformatting may be needed, for example to replace / by underscore. (or uri-encoding)
 
