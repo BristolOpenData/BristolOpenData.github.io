@@ -8,6 +8,7 @@ feature_image: "http://bd7a65e2cb448908f934-86a50c88e47af9e1fb58ce0672b5a500.r32
 
 # This is my test post
 ## another heading
+<!--more-->
 ## heading number 3
 
 This is my first line
