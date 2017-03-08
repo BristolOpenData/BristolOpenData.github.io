@@ -6,19 +6,13 @@ Trees are complex dynamic objects and the records kept reflect the different pur
 ## Core data
 The core data used in Bristol Trees are:
 
-Identifier:  constructed {sourcecode}-{sourceid}
-
-Species - Primary: Botanical (latin) name; derived Common name
-
-Location - Primary: Lat/long; derived: OS Easting/Northing; Secondary: Site, Address
-
-Dimensions: survey date;  girth (trunk circumference) in cm; height in m ; canopy width in m
-
-Age : age at survey date | date planted | maturity
-
-State:  Live Tree | Stump | Dead | Tree pit | No tree | Sculpture ; tree condition
-
-Description: information about this specific tree; history etc
+*Identifier:  constructed {sourcecode}-{sourceid}
+*Species - Primary: Botanical (latin) name; derived Common name
+*Location - Primary: Lat/long; derived: OS Easting/Northing; Secondary: Site, Address
+*Dimensions: survey date;  girth (trunk circumference) in cm; height in m ; canopy width in m
+*Age : age at survey date | date planted | maturity
+*State:  Live Tree | Stump | Dead | Tree pit | No tree | Sculpture ; tree condition
+*Description: information about this specific tree; history etc
 
 ### Tree identity
 To provide a unique internal identifier which retains the identity in the source, Bristol Trees constructs a binomial code, using a code for the source and the source code.  It is important for the source identifier be recoverable so that matching to source data and export of updated data is possible.  This depends on the existence of a unique code or combination of codes in the source data and this is not always the case. Since identifiers are used in URLs, some reformatting may be needed, for example to replace / by underscore. (or uri-encoding)
