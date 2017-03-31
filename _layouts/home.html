@@ -20,6 +20,7 @@
 
     <!-- recent news -->
     <section>
+
         {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
         {% assign num_colors = colors | size %}
 
@@ -31,8 +32,18 @@
 
                     <div class="four wide column">
                         <div class="ui {{colors[color_index]}} inverted segment">
-                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                            <!--<p>{{ post.excerpt }}</p>-->
+                                <div class="content">
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </div>
+                                <div class="meta">
+                                    {% if post.event_date %}
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                    {{post.event_date | date: '%B %d, %Y'}}
+                                    {% else %}
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    {{post.date | date: '%B %d, %Y'}}
+                                    {% endif %}
+                                </div>
                         </div>
                     </div><!-- /.four.wide.column -->
                 {% endfor %}
@@ -42,8 +53,18 @@
                     {% assign color_index = loopindex | modulo: num_colors %}
                     <div class="four wide column">
                         <div class="ui {{colors[color_index]}} inverted segment">
-                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                            <!--<p>{{ post.excerpt }}</p>-->
+                            <div class="content">
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            </div>
+                            <div class="meta">
+                                {% if post.event_date %}
+                                <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                {{post.event_date | date: '%B %d, %Y'}}
+                                {% else %}
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                {{post.date | date: '%B %d, %Y'}}
+                                {% endif %}
+                            </div>
                         </div>
                     </div><!-- /.four.wide.column -->
                 {% endfor %}
@@ -53,8 +74,18 @@
                     {% assign color_index = loopindex | modulo: num_colors %}
                     <div class="four wide column">
                         <div class="ui {{colors[color_index]}} inverted segment">
-                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-                            <!--<p>{{ post.excerpt }}</p>-->
+                            <div class="content">
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            </div>
+                            <div class="meta">
+                                {% if post.event_date %}
+                                <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                {{post.event_date | date: '%B %d, %Y'}}
+                                {% else %}
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                {{post.date | date: '%B %d, %Y'}}
+                                {% endif %}
+                            </div>
                         </div>
                     </div><!-- /.four.wide.column -->
 

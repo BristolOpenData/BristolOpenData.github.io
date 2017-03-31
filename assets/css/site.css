@@ -96,9 +96,14 @@
 }
 
 
-#main section .column .segment {
-  height: 12em;
+#main section .column .segment .content {
+  height: 9em;
 }
+
+#main section .column .segment .meta {
+  text-align:right;
+}
+
 
 #main .row .column .tile.blue {
   background-color: #2185d0;
