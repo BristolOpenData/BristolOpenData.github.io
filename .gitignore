@@ -4,6 +4,7 @@
 
 .idea/
 
+
 #################
 ## Eclipse
 #################
@@ -221,3 +222,8 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 .idea/vcs.xml
+
+#################
+## GitHub Pages
+#################
+_site/

@@ -1,0 +1,12 @@
+<div class="ui center aligned segment">
+
+  <!-- Twitter -->
+    <a class="ui medium twitter button" href="https://twitter.com/intent/tweet?hashtags={{ page.tags | join: ',' | remove: ' ' }}&amp;text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ site.url }}{{ page.url }}{% if author.twitter %}&amp;via={{ author.twitter }}{% endif %}" title="Share on Twitter" itemprop="Twitter"><i class="twitter icon"></i> Tweet</a>
+
+  <!-- Facebook -->
+    <a class="ui medium facebook button" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" itemprop="Facebook"><i class="facebook icon"></i> Share</a>
+
+  <!-- Google+ -->
+    <a class="ui medium google plus button" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus" itemprop="GooglePlus"><i class="google plus icon"></i> +1</a>
+
+</div>

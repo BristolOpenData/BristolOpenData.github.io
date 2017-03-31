@@ -1,113 +1,51 @@
-# Site configuration
-# 1. Files excluded from Jekyll builds
-# 2. Installed Gems
-# 3. Gem settings
-# 4. Jekyll settings
-# 5. Collections
-# 6. Jekyll collections settings
-# 7. Site settings
-# 8. Site navigation
 
-# 1. Files excluded from Jekyll builds
-exclude:
-- README.md
-- screenshot.png
-- LICENSE
-- CNAME
-- Gemfile
-- Gemfile.lock
+title: Bristol Open Data
+tagline: Helping people in and around Bristol make use of open data
+locale: en_GB
+description: Helping Bristol to use more and share more open data. We also run the Bristol ODI Node.
+logo: site-logo.png
+search: true
+url: https://bristolopendata.github.io
 
-# 2. Installed Gems
-gems:
-- jekyll-sitemap
-- jekyll-mentions
-- jekyll-paginate
-- jekyll-seo-tag
-- jekyll-redirect-from
-- jekyll-feed
-- jemoji
+# Jekyll configuration
 
-theme: alembic-jekyll-theme
-
-# 3. Gem settings
-paginate: 2 # jekyll-paginate > items per page
-paginate_path: blog/page:num # jekyll-paginate > blog page
-jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
-twitter:
-  username: ODIBristol # jekyll-seo-tag > Owners twitter username
-author: BristolOpenData # jekyll-seo-tag > default author
-social: # jekyll-seo-tag > social overrides
-  name: Bristol Open Data # jekyll-seo-tag > real name
-  links:  # jekyll-seo-tag > social aliases (sameAs)
-    - https://twitter.com/ODIBristol
-    - https://github.com/BristolOpenData
-
-# 4. Jekyll settings
+permalink:   /:title/
+markdown:    kramdown
+highlighter: rouge
 sass:
-  style: compressed # Style compression
-permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
-timezone: Europe/London # Timezone for blog posts and alike
+  sass_dir: _sass
+  style: compressed
 
-# 5. Collections
-collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "Bristol Open Data News" # The post list page content
-    feature_text: |
-      Welcome to the BOD Blog
-    feature_image: "https://unsplash.it/1300/400?image=1067"
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
 
-# 6. Jekyll collections settings
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: page # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post # Default layout
-      image: "/assets/placeholder-social.png" # Default image for sharing
 
-# 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
-title: "Bristol Open Data" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/placeholder-logo.svg" # Site logo, also used in jekyll-seo-tag
-description: "BOD description" # Site description and default description, also used in jekyll-seo-tag
-url: "https://bristolopendata.github.io" # Site url, also used in jekyll-seo-tag
-repo: "https://github.com/bristolopendata/bristolopendata.github.io"
-email: "bristolopendata@gmail.com"
-disqus: ""
-avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
-
-# 8. Site navigation
-navigation_header:
-  Home: /
-  Elements: /elements/
-  Blog: /blog/
-  Categories: /categories/
-  Search: /search/
-
-navigation_footer:
-  Theme is Alembic - created by David Darnes: https://darn.es
-
-social_links:
-  Twitter: https://twitter.com/ODIBristol
-  GitHub: https://github.com/bristolopendata
-
-sharing_links:
-  Twitter: "#1DA1F2"
-  facebook: "#3B5998"
-  Google+: "#DC4E41"
-  Pinterest: "#BD081C"
-  LinkedIn: "#0077B5"
-  tumblr: "#36465D"
-  Reddit: "#FF4500"
-  Email: ""
+# Site owner
+owner:
+  name: Bristol Open Data
+  avatar: bio-photo.jpg
+  email: bod@gmail.com
+  disqus-shortname:
+  twitter: BristolOpenData
+  meetup: Bristol_Open_Data
+  facebook: #username
+  github: #BristolOpenData
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: #username
+  instagram: #username
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:

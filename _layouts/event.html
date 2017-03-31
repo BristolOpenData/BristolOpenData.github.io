@@ -13,36 +13,18 @@
                     <article>
                         <h2>{{page.title}}</h2>
                         {{ content }}
-
-                        <div class="ui left aligned segment">
-                            <div class="meta">
-                                {% if page.author %} Written by {{ page.author }} <br />{% endif %}
-                                Published on {{page.date | date: '%B %d, %Y'}}<br />
-
-                                {% if page.tags.size > 0 %}
-                                    Tag{% if page.tags.size > 1 %}s{% endif %}:
-                                    {% for tag in page.tags %}
-                                        <span class="ui tag label">{{ tag }}</span>
-                                    {% endfor %}
-                                {% endif %}
-
-                            </div>
-                        </div>
-
                     </article>
 
                     {% include share.html %}
-
                 </div>
 
+                {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
+                {% assign num_colors = colors | size %}
+
                 <div id="sidebar" class="four wide column">
-
-                    {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
-                    {% assign num_colors = colors | size %}
-
-                    <h3>Latest Blog Posts</h3>
+                    <h3>Events</h3>
                     <div class="ui list">
-                        {% for post in site.categories.news limit: 5 %}
+                        {% for post in site.categories.events limit: 5 %}
                         {% assign loopindex = loopindex | plus: 1 %}
                         {% assign color_index = loopindex | modulo: num_colors %}
                             <div class="item">
@@ -52,10 +34,9 @@
                             </div>
                         {% endfor %}
                     </div><!-- /.list -->
-
-                    <h3>Events</h3>
+                    <h3>Latest Blog Posts</h3>
                     <div class="ui list">
-                        {% for post in site.categories.events limit: 5 %}
+                        {% for post in site.categories.news limit: 5 %}
                         {% assign loopindex = loopindex | plus: 1 %}
                         {% assign color_index = loopindex | modulo: num_colors %}
                         <div class="item">
@@ -65,6 +46,7 @@
                         </div>
                         {% endfor %}
                     </div><!-- /.list -->
+
                 </div>
             </div><!-- row -->
     </div><!-- /#main -->

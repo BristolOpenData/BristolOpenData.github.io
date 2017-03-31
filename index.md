@@ -1,4 +1,6 @@
 ---
+layout: home
+
 title: Bristol Open Data
 feature_text: |
   ## Bristol Open Data
@@ -10,11 +12,6 @@ excerpt: "BOD excerpt text"
 
 Intro text
 
-## List
-
-- Item 1
-- Item 2
-- Item 3
 
 ![Node logo](/assets/images/BristolODInodeLarge.png)
 

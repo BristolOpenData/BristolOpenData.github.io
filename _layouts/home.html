@@ -1,19 +1,112 @@
----
-layout: default
----
+{% include head.html %}
 
-{% include site-header.html %}
+{% include nav.html %}
 
-<main class="main  container">
+<!-- Page Contents -->
+<div class="pusher">
 
-	<article class="article  article--page  content  content--full  typeset">
+    {% include header-content.html %}
 
-    <h1>{{ page.title }}</h1>
 
-    {{ content }}
+    <div id="main" class="ui middle stackable grid container">
 
-  </article>
+        {% include hero.html %}
 
-</main>
+    <!--
+    <section>
+        {{ content }}
+    </section>
+    -->
 
-{% include site-footer.html %}
+    <!-- recent news -->
+    <section>
+
+        {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
+        {% assign num_colors = colors | size %}
+
+        <div class="ui equal height grid">
+
+                {% for post in site.posts limit: 4 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                                <div class="content">
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </div>
+                                <div class="meta">
+                                    {% if post.event_date %}
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                    {{post.event_date | date: '%B %d, %Y'}}
+                                    {% else %}
+                                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                    {{post.date | date: '%B %d, %Y'}}
+                                    {% endif %}
+                                </div>
+                        </div>
+                    </div><!-- /.four.wide.column -->
+                {% endfor %}
+
+                {% for post in site.posts limit: 4 offset: 4 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <div class="content">
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            </div>
+                            <div class="meta">
+                                {% if post.event_date %}
+                                <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                {{post.event_date | date: '%B %d, %Y'}}
+                                {% else %}
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                {{post.date | date: '%B %d, %Y'}}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div><!-- /.four.wide.column -->
+                {% endfor %}
+
+                {% for post in site.posts limit: 4 offset: 8 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <div class="content">
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            </div>
+                            <div class="meta">
+                                {% if post.event_date %}
+                                <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                                {{post.event_date | date: '%B %d, %Y'}}
+                                {% else %}
+                                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                {{post.date | date: '%B %d, %Y'}}
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div><!-- /.four.wide.column -->
+
+                {% endfor %}
+        </div>
+        <div>
+            {% assign posts_num = site.posts | size %}
+            {% if posts_num > 12 %}
+            <div class="ui hidden divider"></div>
+            <div class="ui center aligned segment">
+                <p><a href="/blog#all" title="blog">View All Posts</a></p>
+            </div>
+
+            {% endif %}
+        </div>
+
+    </section>
+
+    </div><!-- /#main -->
+    {% include footer-content.html %}
+
+</div><!-- pusher -->
+
+{% include foot.html %}

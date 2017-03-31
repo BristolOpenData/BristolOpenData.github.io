@@ -1,21 +1,43 @@
----
-layout: default
----
+{% include head.html %}
 
-{% include site-header.html %}
+{% include nav.html %}
 
-<main class="main  container">
+<!-- Page Contents -->
+<div class="pusher">
 
-	<article class="article  article--page  content  typeset">
+    {% include header-content-page.html %}
 
-    <h1>{{ page.title }}</h1>
+    <div id="main" class="ui middle stackable grid container">
+        <div class="row">
+            <div id="content" class="twelve wide column">
+                <article>
+                    <h2>{{page.title}}</h2>
+                    {{ content }}
+                </article>
+            </div>
 
-    {{ content }}
+            <div id="sidebar" class="four wide column">
 
-  </article>
+                {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
+                {% assign num_colors = colors | size %}
 
-  {% include site-aside.html %}
+                <h3>Latest Blog Posts</h3>
+                <div class="ui list">
+                    {% for post in site.posts limit: 5 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+                    <div class="item">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div><!-- /.list -->
+            </div>
+        </div><!-- row -->
+    </div><!-- /#main -->
+    {% include footer-content.html %}
 
-</main>
+</div><!-- pusher -->
 
-{% include site-footer.html %}
+{% include foot.html %}
