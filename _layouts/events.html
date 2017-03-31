@@ -14,9 +14,11 @@
             {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
             {% assign num_colors = colors | size %}
 
+           {% assign event_count = site.categories.events | size %}
+
             <div class="ui equal height grid">
 
-                {% for post in site.posts %}
+                {% for post in site.categories.events %}
                 {% assign loopindex = loopindex | plus: 1 %}
                 {% assign color_index = loopindex | modulo: num_colors %}
 
@@ -35,9 +37,27 @@
                             {% endif %}
                         </div>
                     </div>
+
                 </div><!-- /.four.wide.column -->
+
+                {% endfor %}
+                {% if event_count < 4 %}
+                {% assign filler_num = 4 | minus: event_count %}
+
+                {% for i in (1..filler_num) %}
+                <div class="four wide column">
+                <div class="ui segment">
+                    <div class="content">
+                        <h4>fff</a></h4>
+                    </div>
+                    <div class="meta">
+ddd
+                    </div>
+                </div>
+                </div>
                 {% endfor %}
 
+                {% endif %}
             </div>
         </section>
 

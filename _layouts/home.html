@@ -94,7 +94,11 @@
         <div>
             {% assign posts_num = site.posts | size %}
             {% if posts_num > 12 %}
-                <p><a href="/blog#all" title="blog">see all posts</a></p>
+            <div class="ui hidden divider"></div>
+            <div class="ui center aligned segment">
+                <p><a href="/blog#all" title="blog">View All Posts</a></p>
+            </div>
+
             {% endif %}
         </div>
 
