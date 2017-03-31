@@ -1,8 +1,9 @@
 ---
 title: Experiences with tree data
 layout: post
-category: Case Study
-feature_image: "/assets/images/BCC-41328.jpg"
+categories: 
+    - general
+    - news
 ---
 
 <img src="/assets/images/BCC-41328.jpg" width="200" title="Black Pine"/>

@@ -1,6 +1,5 @@
 ---
 layout: page
-
 title: Style Elements
 excerpt: "A demo of Markdown and HTML includes"
 ---

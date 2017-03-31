@@ -1,8 +1,10 @@
 ---
 title: Innovating with Defra Data
 layout: post
-category: Events
 feature_text: Defra Data
+categories: 
+    - general
+    - news
 ---
 
 [ODI Leeds](https://odileeds.org/) have been working closely with [Defra](https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs), the Department for the Environment Food and Rural Affairs. As part of their work, we held a meeting on innovating with Defra's data, run simultaniously with ODI Leeds and ODI London. 

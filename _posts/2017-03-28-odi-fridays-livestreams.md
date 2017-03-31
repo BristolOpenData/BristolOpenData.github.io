@@ -1,8 +1,9 @@
 ---
 title: Watch the ODI Fridays livestream in Bristol
 layout: post
-category: Events
-feature_text: Watch the ODI Fridays livestream in Bristol
+categories: 
+    - general
+    - news
 ---
 
 Each week ODI Headquarters in London hold a [Friday lunchtime lecture](http://theodi.org/lunchtime-lectures) on a subject relevant to open data. The talk is live streamed on [YouTube](https://www.youtube.com/user/OpenDataInstituteUK).

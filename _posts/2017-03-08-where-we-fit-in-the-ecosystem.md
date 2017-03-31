@@ -1,9 +1,9 @@
 ---
 title: Where we fit into the open data ecosystem
 layout: post
-category: General
-feature_text: |
-  Where we fit into the open data ecosystem 
+categories: 
+    - general
+    - news
 ---
 
 What’s that you say? Another techie meetup in Bristol? Do we really need one? Well, the answer to that question is – yes! 
