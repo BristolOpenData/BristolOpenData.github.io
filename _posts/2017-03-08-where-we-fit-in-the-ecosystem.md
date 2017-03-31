@@ -1,5 +1,6 @@
 ---
 title: Where we fit into the open data ecosystem
+layout: post
 category: General
 feature_text: |
   Where we fit into the open data ecosystem 

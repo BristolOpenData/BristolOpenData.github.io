@@ -1,5 +1,6 @@
 ---
 title: Bristol Open Data Social
+layout: post
 excerpt: Our first meetup is a social at the Royal Navy Volunteer pub
 type: event
 event_date:   2017-04-26 18:30:00

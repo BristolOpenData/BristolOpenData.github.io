@@ -1,5 +1,6 @@
 ---
 title: Welcome to Bristol Open Data
+layout: post
 category: General
 feature_text: |
   Welcome to Bristol Open Data!

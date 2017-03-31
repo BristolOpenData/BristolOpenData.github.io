@@ -1,5 +1,6 @@
 ---
 title: Innovating with Defra Data
+layout: post
 category: Events
 feature_text: Defra Data
 ---

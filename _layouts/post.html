@@ -2,49 +2,42 @@
 
 {% include nav.html %}
 
-<div id="main" role="main">
-    <article class="hentry">
-        {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-        <div class="entry-wrapper">
-            <header class="entry-header">
-                <ul class="entry-tags">
-                    {% for tag in page.tags %}<li><a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
-                </ul>
-                {% if page.link %}
-                <h1 class="entry-title"><a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %} <span class="link-arrow">&rarr;</span></a></h1>
-                {% else %}
-                <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
-                {% endif %}
-            </header>
-            <footer class="entry-meta">
-                {% if page.author %}
-                {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
-                {% endif %}
-                {% if author.avatar contains 'http' %}
-                <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-                {% elsif author.avatar %}
-                <img src="{{ site.url }}/images/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-                {% endif %}
-                <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
-                <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-                {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
+<!-- Page Contents -->
+<div class="pusher">
 
-                {% if page.share %}{% include share.html %}{% endif %}
+    {% include header-content-page.html %}
 
-            </footer>
-            <div class="entry-content">
-                {{ content }}
-            </div><!-- /.entry-content -->
-        </div><!-- /.entry-wrapper -->
-        <nav class="pagination" role="navigation">
-            {% if page.previous %}
-            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous</a>
-            {% endif %}
-            {% if page.next %}
-            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next</a>
-            {% endif %}
-        </nav><!-- /.pagination -->
-    </article>
-</div><!-- /#main -->
+    <div id="main" class="ui middle stackable grid container">
+            <div class="row">
+                <div id="content" class="twelve wide column">
+                    <article>
+                        <h2>{{page.title}}</h2>
+                        {{ content }}
+                    </article>
+                </div>
+
+                <div id="sidebar" class="four wide column">
+
+                    {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
+                    {% assign num_colors = colors | size %}
+
+                    <h3>Latest Blog Posts</h3>
+                    <div class="ui list">
+                        {% for post in site.posts limit: 5 %}
+                        {% assign loopindex = loopindex | plus: 1 %}
+                        {% assign color_index = loopindex | modulo: num_colors %}
+                            <div class="item">
+                                <div class="ui {{colors[color_index]}} inverted segment">
+                                    <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div><!-- /.list -->
+                </div>
+            </div><!-- row -->
+    </div><!-- /#main -->
+    {% include footer-content.html %}
+
+</div><!-- pusher -->
 
 {% include foot.html %}

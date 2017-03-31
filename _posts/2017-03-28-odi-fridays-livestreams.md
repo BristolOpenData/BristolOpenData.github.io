@@ -1,5 +1,6 @@
 ---
 title: Watch the ODI Fridays livestream in Bristol
+layout: post
 category: Events
 feature_text: Watch the ODI Fridays livestream in Bristol
 ---

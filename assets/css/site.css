@@ -89,6 +89,12 @@
   color:#fff !important;
   font-size:2em !important;
 }
+#sidebar .list .item .segment a,
+#sidebar .list .item .segment a:hover,
+#sidebar .list .item .segment a:visited{
+  color:#fff !important;
+}
+
 
 #main section .column .segment {
   height: 12em;
@@ -150,7 +156,6 @@
 
 #sidebar .ui.list article {
   margin: 10px 0;
-  padding: 20px 10px;
   background-color: #e3e3e3;
 }
 
@@ -181,4 +186,8 @@
     margin-top: 0.5em;
     font-size: 1.5em;
   }
+}
+
+img {
+  max-width:100% !important;
 }

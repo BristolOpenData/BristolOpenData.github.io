@@ -1,5 +1,6 @@
 ---
 title: Experiences with tree data
+layout: post
 category: Case Study
 feature_image: "/assets/images/BCC-41328.jpg"
 ---
