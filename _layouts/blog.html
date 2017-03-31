@@ -1,28 +1,77 @@
----
-layout: default
----
+{% include head.html %}
 
-{% include site-header.html %}
+{% include nav.html %}
 
-<main class="main  container">
+<!-- Page Contents -->
+<div class="pusher">
 
-	<div class="content">
+    {% include header-content.html %}
 
-    <article class="article  article--page  typeset">
 
-			{% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
-			<h1>{{ collectiondata.title }}</h1>
+    <div id="main" class="ui middle stackable grid container">
 
-			{{ collectiondata.description | markdownify }}
+        {% include hero.html %}
 
-    </article>
+    <!--
+    <section>
+        {{ content }}
+    </section>
+    -->
 
-    {% include post-list.html %}
+    <!-- recent news -->
+    <section>
+        {% assign colors = "red, orange, green, teal, violet, pink" | split: "," %}
+        {% assign num_colors = colors | size %}
 
-  </div>
+        <div class="ui equal height grid">
 
-  {% include site-aside.html %}
+                {% for post in site.posts limit: 4 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
 
-</main>
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <!--<p>{{ post.excerpt }}</p>-->
+                        </div>
+                    </div><!-- /.four.wide.column -->
+                {% endfor %}
 
-{% include site-footer.html %}
+                {% for post in site.posts limit: 4 offset: 4 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <!--<p>{{ post.excerpt }}</p>-->
+                        </div>
+                    </div><!-- /.four.wide.column -->
+                {% endfor %}
+
+                {% for post in site.posts limit: 4 offset: 8 %}
+                    {% assign loopindex = loopindex | plus: 1 %}
+                    {% assign color_index = loopindex | modulo: num_colors %}
+                    <div class="four wide column">
+                        <div class="ui {{colors[color_index]}} inverted segment">
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <!--<p>{{ post.excerpt }}</p>-->
+                        </div>
+                    </div><!-- /.four.wide.column -->
+
+                {% endfor %}
+        </div>
+        <div>
+            {% assign posts_num = site.posts | size %}
+            {% if posts_num > 12 %}
+                <p><a href="/blog#all" title="blog">see all posts</a></p>
+            {% endif %}
+        </div>
+
+    </section>
+
+    </div><!-- /#main -->
+    {% include footer-content.html %}
+
+</div><!-- pusher -->
+
+{% include foot.html %}

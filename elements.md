@@ -1,8 +1,7 @@
 ---
-title: Elements
-feature_text: |
-  A demo of Markdown and HTML includes
-feature_image: "https://unsplash.it/1300/400?image=1061"
+layout: page
+
+title: Style Elements
 excerpt: "A demo of Markdown and HTML includes"
 ---
 
@@ -47,33 +46,3 @@ Duis aute irure dolor in [a link](# "a link") reprehenderit in voluptate velit e
 ```
 
 `Single line of code`
-
-## HTML Includes
-
-### Contact form
-
-{% include site-form.html %}
-
-### Demo map embed
-
-{% include map.html id="1UT-2Z-Vg_MG_TrS5X2p8SthsJhc" %}
-
-### Button include
-
-{% include button.html text="A button" link="https://david.darn.es" %}
-
-### Icon include
-
-{% include icon.html id="twitter" %}
-
-### Video include
-
-{% include video.html id="zrkcGL5H3MU" %}
-
-### Image includes
-
-{% include figure.html image="https://unsplash.it/300/400?image=123" caption="This image has a caption" %}
-
-{% include figure.html image="https://unsplash.it/300/400?image=123" position="right" %}
-
-{% include figure.html image="https://unsplash.it/2000/400?image=123" position="full" %}
