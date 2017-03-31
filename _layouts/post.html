@@ -21,7 +21,7 @@
 
                                 {% if page.tags.size > 0 %}
                                     Tag{% if page.tags.size > 1 %}s{% endif %}:
-                                    {% for tag in page.tags | sort %}
+                                    {% for tag in page.tags %}
                                         <span class="ui tag label">{{ tag }}</span>
                                     {% endfor %}
                                 {% endif %}

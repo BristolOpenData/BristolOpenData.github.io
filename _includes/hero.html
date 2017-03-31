@@ -1,7 +1,24 @@
-<div id="hero" class="row center aligned">
-    <div class="sixteen wide column">
-        <h3>Next event title</h3>
-        <p class="strapline"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
-        <p><a href="mailto:someone@example.com" class="massive ui button blue">Book</a></p>
-    </div>
+<div id="hero" class="sixteen wide column">
+        {% for post in site.categories.events limit: 1 %}
+
+    <div class="ui raised segment" >
+            <a class="ui red ribbon label">Next Event</a>
+            <div class="ui center aligned container">
+                <h3>{{post.title}}</h3>
+
+                <p class="strapline"><strong>{{post.event_subtitle}}</strong></p>
+
+                {% if post.event_url %}
+                <p><a href="{{post.event_url}}" class="massive ui button bristol-blue">Book</a></p>
+                {% else %}
+                <p><a href="{{post.url}}" class="massive ui button">More Info</a></p>
+                {% endif %}
+
+                <p style="font-size: 2em;">
+                    <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+                    {{post.event_date | date: '%B %d, %Y'}}</p>
+                {% endfor %}
+            </div>
+
+        </div>
 </div><!-- /#hero -->
