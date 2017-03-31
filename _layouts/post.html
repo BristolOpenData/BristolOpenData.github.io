@@ -13,6 +13,22 @@
                     <article>
                         <h2>{{page.title}}</h2>
                         {{ content }}
+
+                        <div class="ui left aligned segment">
+                            <div class="meta">
+                                {% if page.author %} Written by {{ page.author }} <br />{% endif %}
+                                Published on {{page.date | date: '%B %d, %Y'}}<br />
+
+                                {% if page.tags.size > 0 %}
+                                    Tag{% if page.tags.size > 1 %}s{% endif %}:
+                                    {% for tag in page.tags | sort %}
+                                        <span class="ui tag label">{{ tag }}</span>
+                                    {% endfor %}
+                                {% endif %}
+
+                            </div>
+                        </div>
+
                     </article>
 
                     {% include share.html %}
