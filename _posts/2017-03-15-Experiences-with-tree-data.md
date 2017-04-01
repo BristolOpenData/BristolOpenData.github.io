@@ -4,9 +4,11 @@ layout: post
 categories: 
     - general
     - news
+imgdir:	/assets/images/
+
 ---
 
-<img src="/assets/images/BCC-41328.jpg" width="200" title="Black Pine"/>
+![Black Pine]({{site.url}}/assets/images/BCC-41328.jpg){:width="200px"}
 
 
 The [BristolTrees](http://bristoltrees.space) site currently maps around 66,000 trees in Bristol and surrounds obtained from multiple sources with the the bulk of the data coming from Bristol City Council via [opendata.bristol.gov.uk](https://opendata.bristol.gov.uk/Environment/Bristol-Tree-Master-Map/i6te-s3pb).  Each source has provided data in its own format on the trees in their care so it has been necessary to convert this heterogeneous data to a unified data set.  The following notes on this project are a contribution to the discussion of standardisation.
