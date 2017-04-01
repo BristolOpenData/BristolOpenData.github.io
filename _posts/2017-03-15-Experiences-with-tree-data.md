@@ -5,7 +5,7 @@ categories:
     - general
     - news
 imgdir:	/assets/images/
-
+author: Chris Wallace
 ---
 
 ![Black Pine]({{site.url}}/assets/images/BCC-41328.jpg){:width="200px"}
