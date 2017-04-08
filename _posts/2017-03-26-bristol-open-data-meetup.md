@@ -16,7 +16,7 @@ tags:
  
 ---
 
-
+https://www.meetup.com/Bristol_Open_Data/
 
 Our first meetup will be an informal session to introduce
 the Bristol Open Data Group – we have some great plans for future meetups, but
