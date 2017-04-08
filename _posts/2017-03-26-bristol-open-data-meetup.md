@@ -16,4 +16,20 @@ tags:
  
 ---
 
-Fusce elementum erat vitae imperdiet convallis. Aenean id tempor nulla, quis bibendum est. Duis consectetur viverra dolor vel auctor. Quisque aliquet tempus convallis. Proin vulputate, lectus ut faucibus gravida, odio libero vulputate nunc, et egestas ligula leo sollicitudin nulla. Praesent ante metus, iaculis ac sem quis, ultrices placerat purus. Integer non dui non diam eleifend commodo nec nec velit. Phasellus vehicula semper laoreet. Sed sapien ex, congue vel semper vel, venenatis in velit. Sed imperdiet semper sem sit amet blandit. Ut nulla lorem, mattis nec euismod ac, venenatis at erat. Pellentesque et cursus justo, in pretium velit. Ut commodo vel metus eu ornare. Donec aliquet ante eu ultricies pulvinar.
+
+
+Our first meetup will be an informal session to introduce
+the Bristol Open Data Group – we have some great plans for future meetups, but
+we’re also keen to hear from you about any ideas or suggestions you have for future
+meetups. Another thing we are keen for is more volunteers to our group (we are
+a not for profit community group), so if you think you might like to get involved,
+come along to meet us. 
+
+Into Open Data? Great – come along! Heard of Open Data but
+no real idea what it means? Great – come along! Somewhere in between? Great –
+come along! 
+
+This is an open data group that is as much for people who
+don’t know what open data is as it is for people who are into open data. Come
+meet us, we’re nice!
+
