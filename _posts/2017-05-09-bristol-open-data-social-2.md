@@ -16,9 +16,7 @@ tags:
  
 ---
 
-https://www.meetup.com/Bristol_Open_Data/
-
-Our next meetup is another informal gathering to meet up with 
+Our [next meetup](https://www.meetup.com/Bristol_Open_Data/events/239534942/) is another informal gathering to meet up with 
 the Bristol Open Data Group – we have some great plans for future meetups, but
 we’re also keen to hear from you about any ideas or suggestions you have. 
 Another thing we are keen for is more volunteers to our group (we are
@@ -32,3 +30,5 @@ come along!
 This is an open data group that is as much for people who
 don’t know what open data is as it is for people who are into open data. Come
 meet us, we’re nice!
+
+Join our meetup group, whose running costs are kindly sponsored by Epimorphics, at <https://www.meetup.com/Bristol_Open_Data/>
