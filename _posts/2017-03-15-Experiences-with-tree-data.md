@@ -16,7 +16,7 @@ The [BristolTrees](http://bristoltrees.space) site currently maps around 66,000 
 
 Trees are complex dynamic objects and the records kept reflect the different purposes for which data is collected and stored.  Data from an arboretum will be different to that from the part of the council responsible for planting and general maintenance and different again from the data needed for Tree Protection orders (TPO)  Not only does purpose affect what data is held, it determines the precision of the data and it determines accuracy since the cost of errors will vary by purpose.
  
- <div class="ui clearing divider"></div>
+ <div class="ui clearing hidden divider"></div>
  
 ## Core data
 The core data used in Bristol Trees are:
@@ -67,18 +67,18 @@ Notes are often provided by naturalists on the special features of a specific tr
 ## Complications
 Real world data is imperfect and cleaning is nearly always going to be needed, so validation and standardisation scripts and manual intervention are generally needed.
 
-####Missing data.
+#### Missing data.
 Missing data is represented in source-specific ways often involving marker values. In the XML, missing data is handled by omitting the missing element. 
 
 Partially missing data for species is ambiguous. I have taken Quercus and Quercus sp. to be synonymous but sometimes Quercus alone means the (locally) most common species of that Genus (in Bristol, Quercus robur), in which case Quercus sp. may mean a species of Quercus which is not the default.  Full species naming is of course desirable but notation for imprecise identification is needed in practice.
 
-####Round-tripping. 
+#### Round-tripping. 
 Having made corrections and other re-codings, export of the revised data in the original format (round-tripping) becomes problematic. This capability would be needed if citizen-surveyed data is to be contributed back to the source organisation. (Whether the source organisation can input from its export format is of course another matter)  An early decision on whether round-tripping is to be supported is necessary. For example it would be sensible to write scripts to load from the source and its inverse to export to the source at the same time. At present round-tripping is not yet fully supported in Bristol Trees.
 
-####Duplication. 
+#### Duplication. 
 Taking data from multiple sources raises the problem of multiple representations of the same tree. De-duplication has yet to be handled automatically, since it is possible that species as well as location will be different for the same tree.
 
-####Accuracy
+#### Accuracy
 Effort has so far focused on data acquisition, cleaning and normalisation.  We have yet to face the much bigger problem of assessing the accuracy of the data supplied, not least because it is often acquired some time ago, but is undated. 
 
 Re-surveying 66,000 trees seems a daunting task, even if supported by citizen data collection.  However sampling at least is needed to gain a sense of the accuracy of the data. The development of the smartphone tree finding and surveying tools in BristolTrees will be valuable for data collection.  For standardisation purposes it would be helpful if data set metadata provided information on the precision and accuracy of data items.
