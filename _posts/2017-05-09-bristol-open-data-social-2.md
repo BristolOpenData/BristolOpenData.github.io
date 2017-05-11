@@ -16,6 +16,9 @@ tags:
  
 ---
 
+{: .ui .fluid .image }
+![The first Bristol Open Data social gathering]({{site.url}}/assets/images/bodsoc1.jpg)
+
 Our [next meetup](https://www.meetup.com/Bristol_Open_Data/events/239534942/) is another informal gathering to meet up with 
 the Bristol Open Data Group – we have some great plans for future meetups, but
 we’re also keen to hear from you about any ideas or suggestions you have. 
