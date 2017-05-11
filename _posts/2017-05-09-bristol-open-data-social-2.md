@@ -34,4 +34,8 @@ This is an open data group that is as much for people who
 don’t know what open data is as it is for people who are into open data. Come
 meet us, we’re nice!
 
+<div class="ui center aligned container">
+  <a class="ui huge button" href="https://www.meetup.com/Bristol_Open_Data/events/239534942/">Mark your attendance on meetup.com</a>
+</div>
+
 Join our meetup group, whose running costs are kindly sponsored by Epimorphics, at <https://www.meetup.com/Bristol_Open_Data/>
