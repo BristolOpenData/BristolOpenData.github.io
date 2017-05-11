@@ -8,6 +8,7 @@ imgdir:	/assets/images/
 author: Chris Wallace
 ---
 
+{: .ui .left .floated .image }
 ![Black Pine]({{site.url}}/assets/images/BCC-41328.jpg){:width="200px"}
 
 
