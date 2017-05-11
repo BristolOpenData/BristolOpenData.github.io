@@ -15,7 +15,9 @@ author: Chris Wallace
 The [BristolTrees](http://bristoltrees.space) site currently maps around 66,000 trees in Bristol and surrounds obtained from multiple sources with the the bulk of the data coming from Bristol City Council via [opendata.bristol.gov.uk](https://opendata.bristol.gov.uk/Environment/Bristol-Tree-Master-Map/i6te-s3pb).  Each source has provided data in its own format on the trees in their care so it has been necessary to convert this heterogeneous data to a unified data set.  The following notes on this project are a contribution to the discussion of standardisation.
 
 Trees are complex dynamic objects and the records kept reflect the different purposes for which data is collected and stored.  Data from an arboretum will be different to that from the part of the council responsible for planting and general maintenance and different again from the data needed for Tree Protection orders (TPO)  Not only does purpose affect what data is held, it determines the precision of the data and it determines accuracy since the cost of errors will vary by purpose.
-
+ 
+ <div class="ui clearing divider"></div>
+ 
 ## Core data
 The core data used in Bristol Trees are:
 
