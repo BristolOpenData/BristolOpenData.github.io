@@ -15,8 +15,8 @@ tags:
  
 ---
 
-<div>As part of Healthy City Week  (7-14 October), the City Innovation team at Bristol City Council are running a event to 
+As part of Healthy City Week  (7-14 October), the City Innovation team at Bristol City Council are running a event to 
 explore ways of using open data to encourage heatly transport.
 
 
-</div>
+
