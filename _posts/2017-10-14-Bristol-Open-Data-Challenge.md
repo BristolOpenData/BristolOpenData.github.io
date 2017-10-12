@@ -16,7 +16,7 @@ tags:
 ---
 
 As part of [Healthy City Week](http://bristolgreencapital.org/project_cat/healthy-city-week/)  (7-14 October), the City Innovation team at Bristol City Council are running a event to 
-explore ways of using open data to encourage healthy transport.  Event runs from 10am to 6pm and there will be food and prizes!
+explore ways of using open data to encourage healthy transport.  Event is in Saturday 14th October from 10am to 6pm and there will be food and prizes!
 
 [Book now](https://www.eventbrite.co.uk/e/bristol-open-data-challenge-transport-for-a-healthier-bristol-registration-38110681073)
 
