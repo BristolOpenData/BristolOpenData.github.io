@@ -16,7 +16,9 @@ tags:
 ---
 
 As part of Healthy City Week  (7-14 October), the City Innovation team at Bristol City Council are running a event to 
-explore ways of using open data to encourage heatly transport.
+explore ways of using open data to encourage healthy transport.
+
+For further info, see https://www.eventbrite.co.uk/e/bristol-open-data-challenge-transport-for-a-healthier-bristol-registration-38110681073
 
 
 
