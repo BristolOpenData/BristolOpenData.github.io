@@ -5,7 +5,7 @@ excerpt: Help solve Bristol Transport needs
 event_date: 2017-10-14 10:00:00
 event_subtitle: Help make Bristol transport heathier 
 event_url: https://www.eventbrite.co.uk/e/bristol-open-data-challenge-transport-for-a-healthier-bristol-registration-38110681073
-author: JW
+author: CW
 categories: 
     - events
 tags:
